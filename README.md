@@ -1,6 +1,6 @@
 # 99 Haskell Problems - Solutions
 
-Welcome to my repository containing solutions to the **99 Haskell Problems**, a well-known collection of programming challenges designed to help learners master functional programming concepts using Haskell. These problems cover a wide range of topics including lists, arithmetic, logic, trees, and graphs, and serve as a great resource for anyone looking to improve their skills in Haskell.
+Welcome to my repository containing solutions to the [**99 Haskell Problems**](https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems), a well-known collection of programming challenges designed to help learners master functional programming concepts using Haskell. These problems cover a wide range of topics including lists, arithmetic, logic, trees, and graphs, and serve as a great resource for anyone looking to improve their skills in Haskell.
 
 ## About the Problems
 
