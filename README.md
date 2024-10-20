@@ -10,7 +10,7 @@ The 99 Haskell Problems are a series of exercises that challenge you to solve co
 
 Each problem is accompanied by a solution written in Haskell. The problems are grouped by topic, such as:
 
-- **Lists**
+- **Lists** <br>
 The following categories will be in future problems:
 - **Arithmetic**
 - **Logic and Codes**
