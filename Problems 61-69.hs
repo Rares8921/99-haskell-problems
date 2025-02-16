@@ -194,14 +194,22 @@ layout3 t = let (leftOffsets, treeWithCoords, _) = layoutHelper initialX 1 t
             in treeWithCoords
 
 layoutHelper :: Int -> Int -> Tree a -> ([Int], Tree (a, (Int, Int)), [Int])
-layoutHelper _ _ Empty = ([], Empty, [])
+layoutHelper _ _ Empty = ([], Empty, []) -- Base case: if the tree is empty, return empty offsets and tree
 layoutHelper x y (Branch value left right) = 
-    let (leftLeftOffsets, leftTree, leftRightOffsets) = layoutHelper (x - separation) (y + 1) left
+    let 
+        -- Recursively layout the left subtree
+        (leftLeftOffsets, leftTree, leftRightOffsets) = layoutHelper (x - separation) (y + 1) left
+        -- Recursively layout the right subtree
         (rightLeftOffsets, rightTree, rightRightOffsets) = layoutHelper (x + separation) (y + 1) right
+        -- Calculate the separation between the left and right subtrees
         separation = maximum (0 : zipWith (+) leftRightOffsets rightLeftOffsets) `div` 2 + 1
+        -- Calculate new left offsets by merging left and right offsets with the separation
         newLeftOffsets = 0 : mergeOffsets (map (+ separation) leftLeftOffsets) (map (subtract separation) rightLeftOffsets)
+        -- Calculate new right offsets by merging right and left offsets with the separation
         newRightOffsets = 0 : mergeOffsets (map (+ separation) rightRightOffsets) (map (subtract separation) leftRightOffsets)
-    in (newLeftOffsets, Branch (value, (x, y)) leftTree rightTree, newRightOffsets)
+    in 
+        -- Return the new offsets and the tree with coordinates
+        (newLeftOffsets, Branch (value, (x, y)) leftTree rightTree, newRightOffsets)
 
 mergeOffsets :: [a] -> [a] -> [a]
 mergeOffsets [] ys = ys
