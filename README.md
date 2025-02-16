@@ -11,17 +11,17 @@ The 99 Haskell Problems are a series of exercises that challenge you to solve co
 Each problem is accompanied by a solution written in Haskell. The problems are grouped by topic, such as:
 
 - **Lists** <br>
-    The following categories will be in future problems:
 - **Arithmetic**
 - **Logic and Codes**
 - **Binary Trees**
+-    The following categories will be in future problems:
 - **Graphs**
 
 Each solution is implemented with clarity and efficiency in mind, following idiomatic Haskell practices.
 
 ## Usage
 
-Feel free to explore the solutions and use them as a reference for learning. If you are working on the problems yourself, I recommend attempting to solve them independently before reviewing the solutions in this repository.
+Feel free to explore the solutions and use them as a reference for learning. If you are working on the problems yourself, I recommend attempting to solve them independently before reviewing the solutions in this repository. However, if you want to test/change my solutions, you should be aware that the code was tested with the help of cabal compiler.
 
 ## Contribution
 
