@@ -13,7 +13,7 @@ Each problem is accompanied by a solution written in Haskell. The problems are g
 - **Lists** <br>
 - **Arithmetic**
 - **Logic and Codes**
-- **Binary Trees**
+- **Binary/Multiway Trees**
 -    The following categories will be in future problems:
 - **Graphs**
 
