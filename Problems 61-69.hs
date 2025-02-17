@@ -266,3 +266,4 @@ ds2tree = fst . ds2treeAux
 tree2ds :: Tree Char -> String
 tree2ds Empty = "."
 tree2ds (Branch x l r) = x : tree2ds l ++ tree2ds r
+
