@@ -176,3 +176,4 @@ hbalTreeNodes x n = [t | h <- [minHeight n .. maxHeight n], t <- balancedtree h 
                 l <- balancedtree hl nl,
                 r <- balancedtree hr nr
             ]
+
