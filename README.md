@@ -14,7 +14,6 @@ Each problem is accompanied by a solution written in Haskell. The problems are g
 - **Arithmetic**
 - **Logic and Codes**
 - **Binary/Multiway Trees**
--    The following categories will be in future problems:
 - **Graphs**
 
 Each solution is implemented with clarity and efficiency in mind, following idiomatic Haskell practices.
