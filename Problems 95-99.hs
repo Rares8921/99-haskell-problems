@@ -253,3 +253,4 @@ readCrossword input =
   let (ws, rest) = break (== "") (lines input)
       grid = drop 1 rest
   in Crossword ws (toSites grid)
+  
